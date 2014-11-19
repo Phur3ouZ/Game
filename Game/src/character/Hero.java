@@ -7,6 +7,9 @@ import java.util.ArrayList;
 public class Hero extends Character{
 	
 	//Hero Stats Related
+	private int level;
+	private int statPoints; //How many stats able to be used per level
+	
 	private int strength; //Physical Strength
 	private int vitality; //Health related
 	private int endurance; //Tank related
@@ -25,7 +28,7 @@ public class Hero extends Character{
 	private ArrayList equipment;
 	
 	public Hero(){
-		super(3);
+		super(3, 3, 3);
 	}
 		
 	public void useItem(UseableItem item){
