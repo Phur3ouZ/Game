@@ -11,11 +11,15 @@ public class Character {
 		return health;
 	}
 	
-	private void setHealth(int health) {
+	protected void setHealth(int health) {
 		this.health = health;
 	}
 	
-	public void hurt(){
-		setHealth(getHealth() - 1);
+	public void attack(){
+		
+	}
+	
+	public void move(){
+		
 	}
 }
